@@ -20,8 +20,8 @@ $ terraform apply
 4.Запускаем плейбуки для настройки кластера k8s
 -----------------------------------------------
 $ cd ../ansible 
-$ ansible-playbook -i hosts users.yml
-$ ansible-playbook -i hosts install-k8s.yml
-$ ansible-playbook -i hosts master.yml
-$ ansible-playbook -i hosts join-workers.yml
-$ ansible-playbook -i hosts finish.yml
+$ ansible-playbook -i hosts users.yml 
+$ ansible-playbook -i hosts install-k8s.yml 
+$ ansible-playbook -i hosts master.yml 
+$ ansible-playbook -i hosts join-workers.yml 
+$ ansible-playbook -i hosts finish.yml 
