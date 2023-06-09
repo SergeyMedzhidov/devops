@@ -3,8 +3,8 @@
 1.Клонируем проект
 ------------------
 ````
-- $ git clone https://github.com/SergeyMedzhidov/devops-sf_sp1
-- $ cd devops-sf_sp1
+$ git clone https://github.com/SergeyMedzhidov/devops-sf_sp1
+$ cd devops-sf_sp1
 ````
 2.Генерируем ключи и копируем в каталог проекта
 -----------------------------------------------
