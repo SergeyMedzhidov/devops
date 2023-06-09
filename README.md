@@ -1,8 +1,8 @@
 # devops-sf_sp1
 ### Разворачиваем инфраструктуру в яндекс облаке: ###
-````
 1.Клонируем проект
 ------------------
+````
 - $ git clone https://github.com/SergeyMedzhidov/devops-sf_sp1
 - $ cd devops-sf_sp1
 ````
