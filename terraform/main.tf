@@ -33,17 +33,6 @@ resource "yandex_compute_instance" "srv" {
     user-data = "root:${file("./meta.yml")}"
   }
 
-  provisioner "remote-exec" {
-    inline = ["sudo hostnamectl set-hostname srv"]
-  }
-
-  connection {
-    host = yandex_compute_instance.srv.network_interface.0.nat_ip_address
-    type = "ssh"
-    user = "root"
-    private_key = "${file("./meta.yml")}"
-  }
-
   network_interface {
     subnet_id = "e9bkad5fmqruihg0r70h"
     nat       = true
@@ -56,7 +45,6 @@ resource "yandex_compute_instance" "k8s-master" {
   provisioner "remote-exec" {
     inline = ["sudo hostnamectl set-hostname k8s-master"]
   }
-
 
   resources {
     cores  = 2
